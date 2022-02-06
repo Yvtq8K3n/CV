@@ -1,0 +1,44 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv} 
+\name{}{Pedro Ferreira}
+\tagline{Software Engineer | Frontend Development}
+\photo{2.5cm}{pf_sq}
+\socialinfo{
+	\linkedin{xqsme}
+	\github{xqsme}\\
+	\smartphone{+351 913 200 881}
+	\email{pedro-ferreira92@hotmail.com}\\
+	\address{Leiria, Portugal}
+	\infos{03/11/1992}
+}
+
+\begin{document}
+
+	\makecvheader
+
+	\makecvfooter
+		{\textsc{\today}}
+		{\textsc{Pedro Ferreira - CV}}
+		{\thepage}
+
+	\input{section_headline}
+	\input{section_competences}
+	\input{section_experience_short}
+	\input{section_languages}
+	\input{section_education}
+	\input{section_interests}
+	\input{section_projects}
+	\input{section_references}
+
+\end{document}
