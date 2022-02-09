@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/Arch Linux)  (format=lualatex 2022.2.6)  8 FEB 2022 17:45
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/Arch Linux)  (format=lualatex 2022.2.6)  9 FEB 2022 15:28
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/xqsme/git/cv/cv.tex
@@ -924,12 +924,12 @@ Here is how much of LuaTeX's memory you used:
  156329,1144653 words of node,token memory allocated
  524 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 8 attribute, 69 glue_spec, 5 attribute_list, 2 write nodes
-   avail lists: 1:4,2:5837,3:3276,4:358,5:1532,6:220,7:10388,8:43,9:2349,10:10,11:668
+   avail lists: 1:3,2:5815,3:3270,4:358,5:1511,6:217,7:10274,8:43,9:2322,10:10,11:665
  49406 multiletter control sequences out of 65536+600000
  51 fonts using 7852015 bytes
  115i,12n,111p,1209b,923s stack positions out of 5000i,500n,10000p,200000b,80000s
 <./fonts/SourceSansPro-Light.otf></usr/share/texmf-dist/fonts/opentype/public/fontawesome/FontAwesome.otf><./fonts/SourceSansPro-Regular.otf>
-Output written on cv.pdf (1 page, 719633 bytes).
+Output written on cv.pdf (1 page, 719659 bytes).
 
 PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
