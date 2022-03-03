@@ -441,6 +441,8 @@ INPUT /etc/fonts/conf.d/69-urw-p052.conf
 INPUT /etc/fonts/conf.d/69-urw-standard-symbols-ps.conf
 INPUT /etc/fonts/conf.d/69-urw-z003.conf
 INPUT /etc/fonts/conf.d/30-wine-lol-win32-aliases.conf
+INPUT /etc/fonts/conf.d/11-lcdfilter-default.conf
+INPUT /etc/fonts/conf.d/48-spacing.conf
 INPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua
 INPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
 OUTPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua
@@ -508,6 +510,8 @@ INPUT ./section_experience_short.tex
 INPUT ./section_experience_short.tex
 INPUT ./section_education.tex
 INPUT ./section_education.tex
+INPUT ./section_publications.tex
+INPUT ./section_publications.tex
 INPUT ./section_languages.tex
 INPUT ./section_languages.tex
 INPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua
@@ -515,8 +519,6 @@ INPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-looku
 OUTPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua
 INPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.lua
 OUTPUT /home/xqsme/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc
-INPUT ./section_interests.tex
-INPUT ./section_interests.tex
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./cv.aux
 INPUT ./cv.out
