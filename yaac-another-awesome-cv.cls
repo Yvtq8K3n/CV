@@ -16,7 +16,7 @@
 % The Current Maintainer of this work is M. C. Roger.
 %
 % This work consists of the files awesome-source-cv.cls 
-
+\usepackage{setspace}
 \ProvidesClass{yaac-another-awesome-cv}[2018/07/19  v1.9.2 'YAAC: Another Awesome CV' Class]
 
 \LoadClass[a4paper]{article}
@@ -305,11 +305,11 @@
 
 % Define a footer for CV
 % Usage: \makecvfooter{<left>}{<center>}{<right>}
-\newcommand*{\makecvfooter}[3]{%
+\newcommand*{\makecvfooter}[1]{%
   \fancyfoot{}
-  \fancyfoot[L]{#1}
-  \fancyfoot[C]{#2}
-  \fancyfoot[R]{#3}
+  % \fancyfoot[L]{#1}
+  \fancyfoot[C]{#1}
+  % \fancyfoot[R]{#3}
 }
 
 % Resume part title definition
@@ -376,12 +376,18 @@
 %                      <Experience description (Could be a list)>
 %                    }
 %                    {<Technology list>}
-\newcommand\experience[7]{
-  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
-  \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
-  					         #6
-                   \end{minipage}										\\*
-                 & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
+\newcommand\experience[9]{
+  \textbf{#1}                   & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \begin{minipage}[t]{\leftcolumn}
+    \begin{flushright}
+    \textbf{#5}\\
+    #7\\
+    \textbf{#8}
+    \end{flushright}
+  \end{minipage}    & \begin{minipage}[t]{\rightcolumnlength}
+    \setstretch{1.5}  #6 \\
+                        \footnotesize{\foreach \n in {#9}{\cvtag{\n}}} 	
+                      \end{minipage} \\
   }
 
 % Render a consultant experience in the experiences environment
