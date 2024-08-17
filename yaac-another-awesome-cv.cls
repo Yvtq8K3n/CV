@@ -179,9 +179,10 @@
 
 % Create a tag
 % Usage: \cvtag{<tag label>}
-\newcommand{\cvtag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=darkGrey!70,rounded corners=0.5ex,inner xsep=1ex,inner ysep =0.55ex,text height=1.3ex,text depth=.25ex]{#1};
+\newcommand{\cvtag}[2][darkGrey!70]{%
+  \tikz[baseline]\node[anchor=base,draw=#1,fill=#1!10,rounded corners=0.5ex,inner xsep=1ex,inner ysep=0.55ex,text height=1.3ex,text depth=.25ex]{#2};
 }
+
 
 % Render author's name
 % Usage: \user{<firstanme>}{<lastname>}
@@ -386,8 +387,12 @@
     \end{flushright}
   \end{minipage}    & \begin{minipage}[t]{\rightcolumnlength}
     \setstretch{1.5}  #6 \\
-                        \footnotesize{\foreach \n in {#9}{\cvtag{\n}}} 	
-                      \end{minipage} \\
+\footnotesize{
+  \foreach \n/\c in {#9}{
+    \cvtag[\c]{\n}
+  }
+} 	
+\end{minipage} \\
   }
 
 % Render a consultant experience in the experiences environment
@@ -408,7 +413,7 @@
                  & \footnotesize{\foreach \n in {#9}{\cvtag{\n}}} 	\\
   }
 
-\newcommand\emptySeparator{\multicolumn{2}{c}{}\\}
+\newcommand\emptySeparator{\multicolumn{2}{c}{\vspace{-2mm}}\\}
 
 % Define the 'projects' environment
 \newenvironment{projects}{%
