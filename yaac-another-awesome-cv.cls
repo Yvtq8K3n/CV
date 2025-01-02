@@ -130,8 +130,8 @@
 \titlespacing{\section}{0pt}{2pt}{2pt}
 
 % Configure list
-\setlist[itemize,1]{label=\faAngleRight, nosep, leftmargin=2em} 
-\setlist[itemize,2]{label=\faAngleRight, nosep, leftmargin=1.5em} 
+\setlist[itemize,1]{label=\textbullet, font=\Large\bfseries, leftmargin=1em} 
+\setlist[itemize,2]{label=\circ, leftmargin=1em} 
 
 % Setup Array : new column type
 \newcolumntype{R}[1]{>{\hfill}m{#1}}
@@ -378,15 +378,14 @@
 %                    }
 %                    {<Technology list>}
 \newcommand\experience[9]{
-  \textbf{#1}                   & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \textbf{#1}                   & \textbf{#2 - #3}, {#4} (#7)   								\\*
   \begin{minipage}[t]{\leftcolumn}
     \begin{flushright}
-    \textbf{#5}\\
-    #7\\
-    \textbf{#8}
+    \textbf{#5}\\ 
     \end{flushright}
   \end{minipage}    & \begin{minipage}[t]{\rightcolumnlength}
-    \setstretch{1.5}  #6 \\
+    \ignorespaces #6 % Allow for block environments
+    \par % Ensure proper paragraph breaks
 \footnotesize{
   \foreach \n/\c in {#9}{
     \cvtag[\c]{\n}
@@ -394,6 +393,24 @@
 } 	
 \end{minipage} \\
   }
+
+%   \newcommand\experience[9]{
+%   \textbf{#1}                   & \textbf{#2, \textsc{#3}, #4}   								\\*
+%   \begin{minipage}[t]{\leftcolumn}
+%     \begin{flushright}
+%     \textbf{#5}\\
+%     #7\\
+%     \textbf{#8}
+%     \end{flushright}
+%   \end{minipage}    & \begin{minipage}[t]{\rightcolumnlength}
+%     \setstretch{1.5}  #6 \\
+% \footnotesize{
+%   \foreach \n/\c in {#9}{
+%     \cvtag[\c]{\n}
+%   }
+% } 	
+% \end{minipage} \\
+%   }
 
 % Render a consultant experience in the experiences environment
 % Usage: 
