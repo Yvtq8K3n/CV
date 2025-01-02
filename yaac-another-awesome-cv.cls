@@ -386,6 +386,8 @@
   \end{minipage}    & \begin{minipage}[t]{\rightcolumnlength}
     \ignorespaces #6 % Allow for block environments
     \par % Ensure proper paragraph breaks
+    \vspace{0.3em}
+    % \hspace{0.5em}
 \footnotesize{
   \foreach \n/\c in {#9}{
     \cvtag[\c]{\n}
