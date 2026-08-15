@@ -15,11 +15,12 @@
 % 
 % The Current Maintainer of this work is M. C. Roger.
 %
-% This work consists of the files awesome-source-cv.cls 
-\usepackage{setspace}
+% This work consists of the files awesome-source-cv.cls
 \ProvidesClass{yaac-another-awesome-cv}[2018/07/19  v1.9.2 'YAAC: Another Awesome CV' Class]
 
 \LoadClass[a4paper]{article}
+
+\RequirePackage{setspace}
 
 \newif\if@showLinks   \@showLinksfalse
 
